@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.1",
+  "description": "Machine-readable output contract for St. Mary's admissions call reviews. Store anonymized IDs only in public repositories.",
+  "call": {
+    "call_id": "string-anonymized",
+    "call_type": "cold | warm | follow_up | counselling | closing",
+    "agent_id": "string-anonymized",
+    "program": "string-or-null",
+    "lead_stage": "string-or-null",
+    "outcome": "no_answer | not_interested | qualified | callback | visit_booked | counselling_booked | application_started | admitted | other"
+  },
+  "review": {
+    "overall_score": 0,
+    "manager_review_required": false,
+    "score_breakdown": {
+      "compliance_integrity": { "score": 0, "max": 15 },
+      "opening_permission": { "score": 0, "max": 10 },
+      "discovery_relevance": { "score": 0, "max": 20 },
+      "listening_reflection": { "score": 0, "max": 15 },
+      "recommendation_value_mapping": { "score": 0, "max": 15 },
+      "objection_handling": { "score": 0, "max": 10 },
+      "next_step_close": { "score": 0, "max": 10 },
+      "crm_follow_up": { "score": 0, "max": 5 }
+    },
+    "evidence": [
+      {
+        "timestamp": "00:00-or-null",
+        "principle_id": "P001",
+        "observation": "string",
+        "impact": "positive | negative | neutral"
+      }
+    ],
+    "strengths": ["string"],
+    "priority_misses": ["string"],
+    "hard_flags": [
+      "deceptive_familiarity",
+      "misleading_identity",
+      "unsupported_claim",
+      "false_scarcity_or_deadline",
+      "guarantee",
+      "fear_or_shaming",
+      "financial_pressure",
+      "ignored_opt_out",
+      "privacy_issue",
+      "abusive_or_disrespectful",
+      "misleading_competitor_claim"
+    ]
+  },
+  "discovery": {
+    "stated_goal": "string-or-null",
+    "decision_criteria": ["string"],
+    "concerns": ["string"],
+    "timing": "string-or-null",
+    "decision_context": "string-or-null",
+    "fit_summary": "string-or-null"
+  },
+  "objections": [
+    {
+      "type": "fee | distance | timing | competitor | spouse_or_family | need_to_think | academics | results | hostel | transport | scholarship | trust | other",
+      "stated_objection": "string",
+      "clarified_root_issue": "string-or-null",
+      "acan": {
+        "acknowledged": false,
+        "clarified": false,
+        "answered": false,
+        "next_step_or_check": false
+      },
+      "handling_quality": "strong | adequate | weak | harmful"
+    }
+  ],
+  "next_step": {
+    "type": "none | callback | whatsapp_info | campus_visit | counselling | faculty_interaction | hostel_visit | eligibility_check | application | payment_or_confirmation | other",
+    "scheduled": false,
+    "datetime_text": "string-or-null",
+    "owner": "string-anonymized-or-null"
+  },
+  "analytics": {
+    "call_duration_seconds": null,
+    "agent_talk_percent": null,
+    "prospect_talk_percent": null,
+    "question_count": null,
+    "open_question_count": null,
+    "interruptions_by_agent": null,
+    "longest_agent_monologue_seconds": null,
+    "discovery_before_recommendation": null,
+    "explicit_next_step": null
+  },
+  "coaching": {
+    "priority_1": "string",
+    "priority_2": "string-or-null",
+    "better_alternative": "string",
+    "practice_drill": "string",
+    "next_review_focus": "string"
+  },
+  "reviewer": {
+    "confidence": "high | medium | low",
+    "notes": "string-or-null"
+  },
+  "privacy": {
+    "contains_pii": false,
+    "public_repo_safe": true
+  }
+}
