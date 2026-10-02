@@ -1,0 +1,205 @@
+{
+  "bundle_version": "0.1",
+  "status": "approved_for_salesos",
+  "source_repository": "saga0003/salesmemory",
+  "source_commit": "0a4586dcb805bf715fbed9f45e4a9f48f4720433",
+  "purpose": "Approved, public-safe sales methodology for St. Mary's admissions. Institutional facts such as fees, current deadlines, scholarships, seat availability and current results must come from the private institute knowledge bundle.",
+  "principles": [
+    {
+      "id": "P001",
+      "status": "A",
+      "name": "Listen before recommending",
+      "rule": "Understand the family's goal, concern, comparison criteria, timing and decision stage before recommending."
+    },
+    {
+      "id": "P002",
+      "status": "A",
+      "name": "Adapt, do not read a rigid script",
+      "rule": "Use a consistent process but adapt wording and order to the lead, programme, concern and funnel stage."
+    },
+    {
+      "id": "P003",
+      "status": "B",
+      "name": "Diagnostic questions",
+      "rule": "Ask relevant questions naturally. Do not optimize for a fixed question count or interrogate."
+    },
+    {
+      "id": "P004",
+      "status": "B",
+      "name": "Reflect and summarize",
+      "rule": "Briefly paraphrase important needs or concerns and allow correction before recommending."
+    },
+    {
+      "id": "P005",
+      "status": "B",
+      "name": "Clarify objections with ACAN",
+      "rule": "Acknowledge -> Clarify when needed -> Answer factually -> Next step/check. Never use clarification to evade a direct factual question."
+    },
+    {
+      "id": "P006",
+      "status": "C",
+      "name": "Transparent concise opening",
+      "rule": "Identify St. Mary's and the reason for calling promptly; earn permission to continue. Exact opener length remains a local experiment."
+    },
+    {
+      "id": "P007",
+      "status": "A/B",
+      "name": "Map value to the stated goal",
+      "rule": "Need/goal -> relevant approved St. Mary's fact -> why it matters -> suitable next step. Avoid feature dumps."
+    },
+    {
+      "id": "P008",
+      "status": "required",
+      "name": "Truth and fit",
+      "rule": "Do not force every lead toward admission. Never invent rankings, results, scholarships, scarcity, deadlines, guarantees or competitor claims."
+    },
+    {
+      "id": "P009",
+      "status": "B/C",
+      "name": "Tone and pacing",
+      "rule": "Coach clarity, warmth, pace, emphasis, pauses and filler reduction without forcing an artificial sales voice."
+    },
+    {
+      "id": "P010",
+      "status": "B/C",
+      "name": "Explicit next step",
+      "rule": "Qualified conversations should normally end with a clear next action appropriate to the funnel stage."
+    },
+    {
+      "id": "P011",
+      "status": "operational",
+      "name": "Follow-up discipline",
+      "rule": "Meaningful calls should leave current status, needs/objections, next action and next-action date/time when applicable."
+    },
+    {
+      "id": "P012",
+      "status": "required",
+      "name": "Preserve autonomy",
+      "rule": "Respect questions, comparisons, later requests, no decisions and opt-outs. Guide rather than dominate."
+    }
+  ],
+  "call_flow": [
+    {
+      "step": 1,
+      "name": "Open transparently",
+      "rule": "Identify St. Mary's, reason for call and check whether it is suitable to continue when appropriate."
+    },
+    {
+      "step": 2,
+      "name": "Establish relevance",
+      "rule": "Confirm programme/grade/context and why the conversation may matter."
+    },
+    {
+      "step": 3,
+      "name": "Discover",
+      "rule": "Understand goals, decision criteria, concerns, timing and decision context with targeted questions."
+    },
+    {
+      "step": 4,
+      "name": "Reflect",
+      "rule": "Summarize the family's priorities and let them correct the understanding."
+    },
+    {
+      "step": 5,
+      "name": "Recommend selectively",
+      "rule": "Use only approved current facts that map directly to the stated need."
+    },
+    {
+      "step": 6,
+      "name": "Handle objections with ACAN",
+      "rule": "Acknowledge, clarify if needed, answer factually, then check or agree the next step."
+    },
+    {
+      "step": 7,
+      "name": "Close for the right next step",
+      "rule": "Choose the appropriate commitment: visit, counselling, information plus scheduled callback, application, confirmation or respectful close."
+    },
+    {
+      "step": 8,
+      "name": "Update CRM",
+      "rule": "Record outcome, needs, objections, information provided, next action and follow-up date/time where applicable."
+    }
+  ],
+  "prohibited_patterns": [
+    "fake familiarity or misleading identity",
+    "fear, shame or pressure about the student's future",
+    "repeated pressure after a clear no",
+    "unsupported competitor attacks",
+    "false deadlines or scarcity",
+    "unverified result, ranking, scholarship or guarantee claims",
+    "pressure to borrow or stretch beyond a stated affordability concern",
+    "rapid-fire interrogation",
+    "refusing direct factual questions to retain control",
+    "assuming generic internet talk/listen ratios or question counts are mandatory"
+  ],
+  "coaching": {
+    "rule": "Coach one or two high-impact behaviours at a time.",
+    "sequence": [
+      "play or quote the exact moment",
+      "ask what the agent noticed",
+      "identify the relevant principle ID",
+      "rewrite or role-play the moment",
+      "listen for the behaviour in future calls",
+      "track whether the downstream metric improves"
+    ]
+  },
+  "rubric": {
+    "total": 100,
+    "components": [
+      {
+        "key": "compliance_integrity",
+        "max": 15
+      },
+      {
+        "key": "opening_permission",
+        "max": 10
+      },
+      {
+        "key": "discovery_relevance",
+        "max": 20
+      },
+      {
+        "key": "listening_reflection",
+        "max": 15
+      },
+      {
+        "key": "recommendation_value_mapping",
+        "max": 15
+      },
+      {
+        "key": "objection_handling",
+        "max": 10
+      },
+      {
+        "key": "next_step_close",
+        "max": 10
+      },
+      {
+        "key": "crm_follow_up",
+        "max": 5
+      }
+    ],
+    "hard_flags": [
+      "deceptive_familiarity",
+      "misleading_identity",
+      "unsupported_claim",
+      "false_scarcity_or_deadline",
+      "guarantee",
+      "fear_or_shaming",
+      "financial_pressure",
+      "ignored_opt_out",
+      "privacy_issue",
+      "abusive_or_disrespectful",
+      "misleading_competitor_claim"
+    ]
+  },
+  "knowledge_gap_rule": {
+    "detect_when": [
+      "a parent asks a factual institute question for which no approved current answer is available",
+      "the agent encounters an objection or situation not covered by the approved playbook",
+      "the transcript reveals conflicting, ambiguous or possibly stale institutional information",
+      "the agent needs a policy, escalation path or approved claim that is absent"
+    ],
+    "do_not_gap_when": "The answer is already present in approved sales methodology or the private approved institute facts."
+  }
+}
